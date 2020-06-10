@@ -1,0 +1,11 @@
+mgmcdermott.vscode-language-babel
+coenraads.bracket-pair-colorizer
+donjayamanne.githistory
+oderwat.indent-rainbow
+pkief.material-icon-theme
+oscarmcm.ocean-space
+christian-kohler.path-intellisense
+esbenp.prettier-vscode
+syler.sass-indented
+diegolincoln.vscode-styled-components
+yzhang.markdown-all-in-one
