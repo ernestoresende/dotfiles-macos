@@ -49,36 +49,10 @@ eval "source ~/.zshrc"
 printf "\n${BLUE}Opening links for apps to download...${NORMAL}\n"
 
 # =========================
-
-# Browsers
-eval "open https://www.google.com/chrome/"
-eval "open https://www.google.com/chrome/canary/"
-eval "open https://www.mozilla.org/en-US/firefox/new/"
+# Put here all the programs you cannot download with "brew cask install"
 
 # Productivity
-eval "open https://www.google.com/drive/download/"
-eval "open https://www.spectacleapp.com/"
-eval "open https://www.notion.so/desktop"
 eval "open https://www.google.com/intl/pt-BR_ALL/drive/download/backup-and-sync/"
-
-#Development
-eval "open https://code.visualstudio.com/"
-eval "open https://hyper.js/"
-
-#Design
-eval "open https://www.sketchapp.com/"
-eval "open https://imageoptim.com/mac"
-eval "open https://www.figma.com/downloads/"
-
-#Communication
-eval "open https://getmailspring.com/download"
-eval "open https://slack.com/downloads/osx"
-eval "open https://discord.com/download"
-
-#Misc
-eval "open http://matthewpalmer.net/rocket/"
-eval "open https://www.spotify.com/us/download/mac/"
-eval "open http://www.videolan.org/"
 
 printf "\n${WHITE}==============================================================================
 ${GREEN}All set!
