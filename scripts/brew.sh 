@@ -1,0 +1,93 @@
+#!/bin/bash
+
+RED="\033[31m"
+GREEN="\033[32m"
+YELLOW="\033[33m"
+BLUE="\033[34m"
+MAGENTA="\033[35m"
+WHITE="\033[37m"
+NORMAL="\033[0;39m"
+
+# Checks for brew in the system and installs it if not already instaled
+if test ! $(which brew); then
+  printf "${YELLOW}Installing Homebrew...${NORMAL}\n"
+  eval "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
+fi
+
+# Update Brew
+printf "\n${YELLOW}Updating homebrew...${NORMAL}\n"
+eval "brew update"
+
+printf "\n${GREEN}Homebrew installed and up to date!${NORMAL}\n"
+
+# Installing packages from brew
+printf "\n${YELLOW}Installing packages...${NORMAL}\n"
+PACKAGES=(
+	htop
+  wget
+)
+eval "brew install ${PACKAGES[@]}"
+eval "brew install yarn --without-node"
+
+printf "\n${GREEN}Homebrew packages installed!${NORMAL}\n"
+
+# Install Homebrew Cask
+printf "\n${YELLOW}Installing Homebrew Cask...${NORMAL}\n"
+eval "brew tap caskroom/cask"
+
+# Installing Cask Programs
+# ===========================
+
+printf "\n${YELLOW}Installing Development Software${NORMAL}\n"
+DEVELOPMENT_SOFTWARE=(
+  visual-studio-code
+  hyper
+  insomnia
+)
+eval "brew cask install ${DEVELOPMENT_SOFTWARE}"
+
+printf "\n${YELLOW}Installing Productity Software${NORMAL}\n"
+PRODUCTIVITY_SOFTWARE=(
+  rectangle
+  mailspring
+  notion
+  rocket
+)
+eval "brew cask install ${PRODUCTIVITY_SOFTWARE}"
+
+printf "\n${YELLOW}Installing Media Software${NORMAL}\n"
+MEDIA_SOFTWARE=(
+  obs
+  vlc
+  spotify
+)
+eval "brew cask install ${MEDIA_SOFTWARE}"
+
+printf "\n${YELLOW}Installing Communication Software${NORMAL}\n"
+COMMUNICATION_SOFTWARE=(
+  discord
+  slack
+  telegram
+  whatsapp
+)
+eval "brew cask install ${MEDIA_SOFTWARE}"
+
+printf "\n${YELLOW}Installing Design Software${NORMAL}\n"
+DESIGN_SOFTWARE=(
+  figma
+  sketch
+  imageoptim
+)
+eval "brew cask install ${DESIGN_SOFTWARE}"
+
+printf "\n${YELLOW}Installing Design Software${NORMAL}\n"
+DESIGN_SOFTWARE=(
+  firefox
+  google-chrome
+  brave-browser
+)
+eval "brew cask install ${DESIGN_SOFTWARE}"
+
+# Clean it up
+printf "\n${YELLOW}Cleaning up homebrew things...${NORMAL}\n"
+eval "brew cleanup"
