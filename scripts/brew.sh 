@@ -44,7 +44,7 @@ DEVELOPMENT_SOFTWARE=(
   hyper
   insomnia
 )
-eval "brew cask install ${DEVELOPMENT_SOFTWARE}"
+eval "brew cask install ${DEVELOPMENT_SOFTWARE[@]}"
 
 printf "\n${YELLOW}Installing Productity Software${NORMAL}\n"
 PRODUCTIVITY_SOFTWARE=(
@@ -53,7 +53,7 @@ PRODUCTIVITY_SOFTWARE=(
   notion
   rocket
 )
-eval "brew cask install ${PRODUCTIVITY_SOFTWARE}"
+eval "brew cask install ${PRODUCTIVITY_SOFTWARE[@]}"
 
 printf "\n${YELLOW}Installing Media Software${NORMAL}\n"
 MEDIA_SOFTWARE=(
@@ -61,7 +61,7 @@ MEDIA_SOFTWARE=(
   vlc
   spotify
 )
-eval "brew cask install ${MEDIA_SOFTWARE}"
+eval "brew cask install ${MEDIA_SOFTWARE[@]}"
 
 printf "\n${YELLOW}Installing Communication Software${NORMAL}\n"
 COMMUNICATION_SOFTWARE=(
@@ -70,7 +70,7 @@ COMMUNICATION_SOFTWARE=(
   telegram
   whatsapp
 )
-eval "brew cask install ${MEDIA_SOFTWARE}"
+eval "brew cask install ${COMMUNICATION_SOFTWARE[@]}"
 
 printf "\n${YELLOW}Installing Design Software${NORMAL}\n"
 DESIGN_SOFTWARE=(
@@ -78,15 +78,15 @@ DESIGN_SOFTWARE=(
   sketch
   imageoptim
 )
-eval "brew cask install ${DESIGN_SOFTWARE}"
+eval "brew cask install ${DESIGN_SOFTWARE[@]}"
 
 printf "\n${YELLOW}Installing Design Software${NORMAL}\n"
-DESIGN_SOFTWARE=(
+BROWSERS=(
   firefox
   google-chrome
   brave-browser
 )
-eval "brew cask install ${DESIGN_SOFTWARE}"
+eval "brew cask install ${BROWSERS[@]}"
 
 # Clean it up
 printf "\n${YELLOW}Cleaning up homebrew things...${NORMAL}\n"
