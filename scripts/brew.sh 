@@ -80,7 +80,7 @@ DESIGN_SOFTWARE=(
 )
 eval "brew cask install ${DESIGN_SOFTWARE[@]}"
 
-printf "\n${YELLOW}Installing Design Software${NORMAL}\n"
+printf "\n${YELLOW}Installing Browsers${NORMAL}\n"
 BROWSERS=(
   firefox
   google-chrome
@@ -89,5 +89,5 @@ BROWSERS=(
 eval "brew cask install ${BROWSERS[@]}"
 
 # Clean it up
-printf "\n${YELLOW}Cleaning up homebrew things...${NORMAL}\n"
+printf "\n${YELLOW}Cleaning up Homebrew things...${NORMAL}\n"
 eval "brew cleanup"
