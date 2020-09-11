@@ -1,59 +1,15 @@
 {
-  //Configures editor font family and font size 
-  "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 16,
+  //Configures font family and font size
+  "editor.fontFamily": "Menlo",
+  "editor.fontSize": 15,
   "editor.fontWeight": "400",
 
-  //Editor configurations for cursor animations, tab sizes and word wraps for long code lines
-  "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.lineHeight": 22,
-  "editor.tabSize": 2,
-  "editor.useTabStops": false,
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 100,
-  "editor.minimap.enabled": false,
-  "editor.suggestSelection": "first",
-
   //Integrated terminal configurations
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.letterSpacing": 0.7,
   "terminal.integrated.shell.osx": "zsh",
-  "terminal.integrated.lineHeight": 0.7,
-
-   //Workbench configurations
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.labelFormat": "short",
-  "workbench.editor.closeEmptyGroups": false,
-  "workbench.editor.enablePreview": true,
-  "workbench.colorTheme": "Ocean Space Italic",
-  "workbench.colorCustomizations": {},
-
-  //Sets VS Code Icon Theme to Material Icon
-  "workbench.iconTheme": "material-icon-theme",
-        
-  //File configurations and file associations
-  "files.trimFinalNewlines": false,
-  "files.insertFinalNewline": true,
-  "emmet.includeLanguages": { 
-    "javascript": "javascriptreact",
-    "markdown": "html"
-  },
-  "emmet.syntaxProfiles": { "javascript": "jsx" },
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[html]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-
-  //Disables telemetry
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-
-  // Windows title and zoom level configurations
-  "window.zoomLevel": 1,
-  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "terminal.integrated.lineHeight": 0.6,
 
   //Search exclusions for cache and module files
   "search.exclude": {
@@ -64,6 +20,60 @@
     "**/vendor": true,
     "**/storage": true,
     "**/.next": true,
-    "**/platforms": true
+    "**/platforms": true,
+    "*/**/node_modules/": true,
+    ".vscode/": true,
+    "*/**/cache/": true,
+    "*/**/uploads/": true,
+    "*/**/infinitewp/": true,
+    "*/**/.github/": true,
+    //"*/**/build/": true
+  },
+
+  //Editor configurations for cursor animations, tab sizes and word wraps for long code lines
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.cursorBlinking": "blink",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.lineHeight": 22,
+  "editor.tabSize": 2,
+  "editor.useTabStops": false,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+  "editor.minimap.enabled": true,
+
+  //Workbench configurations
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.enablePreview": true,
+
+  //Sets VS Code Icon Theme to Material Icon
+  "workbench.iconTheme": "material-icon-theme",
+
+  //File configurations and file associations
+  "files.trimFinalNewlines": false,
+  "files.insertFinalNewline": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "markdown": "html"
+  },
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  //Disables telemetry
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+
+  "workbench.colorCustomizations": {},
+  "editor.suggestSelection": "first",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "Xcode Default (Dark)",
+  "files.associations": {
+    "*.mdx": "markdown"
   }
 }

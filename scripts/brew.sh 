@@ -25,6 +25,9 @@ printf "\n${YELLOW}Installing packages...${NORMAL}\n"
 PACKAGES=(
 	htop
   wget
+  gradle
+  openjdk
+  tree
 )
 eval "brew install ${PACKAGES[@]}"
 eval "brew install yarn --without-node"
@@ -40,8 +43,9 @@ eval "brew tap caskroom/cask"
 
 printf "\n${YELLOW}Installing Development Software${NORMAL}\n"
 DEVELOPMENT_SOFTWARE=(
+  android-platform-tools
+  android-sdk
   visual-studio-code
-  hyper
   insomnia
 )
 eval "brew cask install ${DEVELOPMENT_SOFTWARE[@]}"
@@ -49,9 +53,7 @@ eval "brew cask install ${DEVELOPMENT_SOFTWARE[@]}"
 printf "\n${YELLOW}Installing Productity Software${NORMAL}\n"
 PRODUCTIVITY_SOFTWARE=(
   rectangle
-  mailspring
   notion
-  rocket
 )
 eval "brew cask install ${PRODUCTIVITY_SOFTWARE[@]}"
 
@@ -84,7 +86,6 @@ printf "\n${YELLOW}Installing Browsers${NORMAL}\n"
 BROWSERS=(
   firefox
   google-chrome
-  brave-browser
 )
 eval "brew cask install ${BROWSERS[@]}"
 
