@@ -34,12 +34,11 @@
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
   "editor.cursorBlinking": "blink",
-  "editor.cursorSmoothCaretAnimation": true,
   "editor.lineHeight": 22,
   "editor.tabSize": 2,
   "editor.useTabStops": false,
   "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 100,
+  "editor.wordWrapColumn": 120,
   "editor.minimap.enabled": true,
 
   //Workbench configurations
@@ -70,10 +69,7 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "Xcode Default (Dark)",
-  "files.associations": {
-    "*.mdx": "markdown"
-  }
+  "workbench.colorTheme": "One Dark Pro"
 }
